@@ -31,83 +31,99 @@
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
-}
 
-#wrap h1{
-    width: 100%;
-    height: auto;
-    color: #fd4150;
-    text-align: center;
-    font-size: 50px;
-    font-family: "VALORANT";
-    padding-top: 20PX;
-}
-
-#tarjetas{
-    width: 100%;
-    max-height:500px ;
-    min-height: 400px;
-    background-color:  transparent;
-    position: relative;
-    flex-wrap: wrap;
-    gap: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: auto;
-
 }
 
-.tarjetas{
-    width: 250px;
-    height: 360px;
-   background-color: slateblue;
-   border-radius: 10px;
-   object-fit: cover;
-   overflow: hidden;
+
+
+#form{
+    width: 400px;
+    height: 350px;
+    background-color: rgba(225, 225, 225, 0.233);
+    backdrop-filter:blur(20px);
+    border-radius: 15px;
+    border: 1px solid  rgba(225, 225, 225, 0.315);
+    gap: 20px;
+    font-family: sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-#tarjetas #killyou img{
-    width: 250px;
-    height: 360px;
-    object-fit: cover;
+#content{
+    width: 80%;
+    height: 80%;
+
+    display: flex;
+    justify-content: center;
+   /*  align-items: center; */
+    flex-direction: column;
+    gap: 20px;
+    font-family: sans-serif;
+}
+
+#content #login{
+    display: block;
+    width: 34%;
+    
+}
+
+#content h1{
+    color: rgba(255, 255, 255, 0.849) ;  
+    border-bottom: 3px solid rgba(255, 255, 255, 0.849) ;
+    padding-bottom: 5px;
+}
+
+input[type = "text"],
+input[type = "password"]{
+    width: 300px;
+    height: 35px;
+    background-color:rgba(255, 255, 255, 0.068); ;
+    border: none;
     border-radius: 20px;
-    position: absolute;
-}
-
-#tarjetas #Gecco img{
-    width: 250px;
-    height: 360px;
-    object-fit: cover;
-    border-radius: 20px;
-    position: absolute;
-}
-
-#tarjetas #Cypher img{
-    width: 250px;
-    height: 360px;
-    object-fit:fill;
-    border-radius: 10px;
-    position: absolute;
-}
-
-
-
-#info{
-    width: 250px;
-    height: 160px;
-    background-color: rgba(255, 255, 255, 0.075);
     backdrop-filter: blur(10px);
-    position:relative;
-    top: 446px;
-    opacity: 0;
-    transition: ease 500ms;
+    border:2px solid rgba(225, 225, 225, 0.788);
+    outline: none;
+    padding-left: 15px;
 }
 
-
-/* hover */
-
-.tarjetas:hover #info{
-    top: 223px;
-    opacity: 1;
+input[type = "text"]::placeholder,
+input[type = "password"]::placeholder{
+    padding-left: 5px;
+    padding-right: 5px;
+    color: rgba(255, 255, 255, 0.849);
 }
+
+input[type = button]{
+    width: 80px;
+    height: 35px;
+    background-color:white;
+    border: none;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border:2px solid rgba(225, 225, 225, 0.788);
+    outline: none;
+    color: #3333338f;
+    font-weight: 900;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.text{
+    display: flex;
+    color: rgba(255, 255, 255, 0.822) ;
+    font-size: 10px ;
+}
+
+.text a{
+    color: rgba(255, 255, 255, 0.822) ;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding-left: 5px;
+}
+
