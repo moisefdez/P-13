@@ -23,7 +23,7 @@
 #wrap {
     width: 95%;
     max-width: 1200px;
-    min-height: 500px;
+    min-height: 580px;
     height: auto;
     background: linear-gradient(to right, #d4d6f1,#7578ee,#d4d6f1);
     box-shadow: 20px 20px 30px #4e3b24;
@@ -42,10 +42,10 @@
 #form{
     width: 400px;
     height: 350px;
-    background-color: rgba(225, 225, 225, 0.233);
-    backdrop-filter:blur(20px);
+    background-color: rgb(225 225 225 / 5%);
+    backdrop-filter:blur(2px);
     border-radius: 15px;
-    border: 1px solid  rgba(225, 225, 225, 0.315);
+    border: 1px solid  rgb(225 225 225);
     gap: 20px;
     font-family: sans-serif;
 
@@ -53,6 +53,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
+    z-index: 1;
 }
 
 #content{
@@ -127,3 +129,47 @@ input[type = button]{
     padding-left: 5px;
 }
 
+/* CUADRADOS ANIMADOS */
+
+.cuadros{
+    width: 100px;
+    height: 100px;
+    background-color: #ac9ff147 ;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    border:1px solid rgba(225, 225, 225, 0.404);
+    border-radius: 10px;
+}
+
+#cuadro1{
+    left: 428px;
+    backdrop-filter: blur(2px);
+    z-index: 2;
+}
+#cuadro2{
+    width: 50px;
+    height: 50px;
+    top: 830px;
+    left: 614px;
+}
+#cuadro3{
+    width: 80px;
+    height: 80px;
+    left: 892px;
+    top: 700px;
+    backdrop-filter: blur(2px);
+    z-index: 2;
+}
+#cuadro4{
+    width: 80px;
+    height: 80px;
+    left: 892px;
+    top: 368px;
+    z-index: 0;
+}
+#cuadro5{
+    top: 362px;
+    width: 50px;
+    height: 50px;
+    z-index: 0;
+}
