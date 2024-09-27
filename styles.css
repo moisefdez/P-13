@@ -23,7 +23,7 @@
 #wrap {
     width: 95%;
     max-width: 1200px;
-    min-height: 580px;
+    min-height: 600px;
     height: auto;
     background: linear-gradient(to right, #d4d6f1,#7578ee,#d4d6f1);
     box-shadow: 20px 20px 30px #4e3b24;
@@ -131,45 +131,91 @@ input[type = button]{
 
 /* CUADRADOS ANIMADOS */
 
+#all{
+    width: 1200px;
+    height: 600px;
+    position: absolute;
+}
+
 .cuadros{
     width: 100px;
     height: 100px;
     background-color: #ac9ff147 ;
     backdrop-filter: blur(5px);
-    position: fixed;
+    position:relative;
     border:1px solid rgba(225, 225, 225, 0.404);
     border-radius: 10px;
 }
 
 #cuadro1{
-    left: 428px;
+    left: 27%;
+    top: 42%;
     backdrop-filter: blur(2px);
     z-index: 2;
+    animation: movimientos2 ease infinite 7s ;
 }
 #cuadro2{
-    width: 50px;
-    height: 50px;
-    top: 830px;
-    left: 614px;
+    top: -8%;
+    left: 65%;
+    animation: movimientos ease infinite 7s ;
 }
 #cuadro3{
     width: 80px;
     height: 80px;
-    left: 892px;
-    top: 700px;
+    z-index: 0;
+    left: 38%;
+    top: -29%;
     backdrop-filter: blur(2px);
-    z-index: 2;
+    animation: movimiento3 ease infinite 5s ;
 }
 #cuadro4{
     width: 80px;
     height: 80px;
-    left: 892px;
-    top: 368px;
-    z-index: 0;
+    left: 66%;
+    top: 17%;
+    z-index: 1;
+    animation: movimientos2 ease infinite 7s ;
 }
 #cuadro5{
-    top: 362px;
+    top: 25%;
+    left: 40%;
     width: 50px;
     height: 50px;
     z-index: 0;
+    animation: movimientos ease infinite 7s ;
+}
+
+@keyframes movimientos {
+    0%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes movimientos2 {
+    0%{
+        transform: translateY(30px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(30px);
+    }
+}
+@keyframes movimiento3{
+    0%{
+        transform: translateY(25px);
+    }
+    50%{
+        transform: translateY(-25px);
+    }
+    100%{
+        transform: translateY(25px);
+    }
 }
